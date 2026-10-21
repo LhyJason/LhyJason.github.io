@@ -124,6 +124,10 @@
   .cv-highlights li{padding:.6rem 0;border-bottom:1px solid var(--line);display:flex;gap:1.2rem;}
   .cv-highlights li:last-child{border-bottom:none;}
   .cv-year{font-weight:700;color:var(--pine);font-size:.9rem;white-space:nowrap;min-width:6.5rem;}
+  .cv-sub{list-style:none;margin:.55rem 0 0;padding:0 0 0 1rem;border-left:2px solid var(--line);}
+  .cv-highlights .cv-sub li{padding:.2rem 0;border-bottom:none;gap:.9rem;font-size:.95rem;}
+  .cv-sub .cv-year{min-width:4.2rem;font-size:.85rem;}
+  .cv-note{max-width:64ch;margin-top:1.2rem;color:var(--ink-soft);font-size:.95rem;}
   .skills{margin-top:1.6rem;max-width:64ch;color:var(--ink-soft);font-size:.95rem;}
   .skills b{color:var(--ink);font-weight:700;}
   .btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--pine);color:#F8F4EC;text-decoration:none;font-weight:600;padding:.75rem 1.3rem;border-radius:10px;font-size:.98rem;transition:background .18s ease;}
@@ -206,7 +210,9 @@
       <li><a href="#news">News</a></li>
       <li><a href="#research">Research</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#cv">CV</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#honors">Honors</a></li>
+      <li><a href="Hanyang_Liu_CV.pdf" target="_blank" rel="noopener">CV</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     </div>
@@ -376,26 +382,52 @@
     </div>
   </section>
 
-  <!-- CV -->
-  <section id="cv">
-    <span class="eyebrow">CV</span>
-    <h2 class="sec-title">The short version</h2>
+  <!-- EDUCATION -->
+  <section id="education">
+    <span class="eyebrow">Education</span>
+    <h2 class="sec-title">Where I’ve studied</h2>
     <ul class="cv-highlights">
-      <li><span class="cv-year">2025–27</span><span>M.S. Data Science, University of Michigan, Ann Arbor.</span></li>
-      <li><span class="cv-year">2024–25</span><span>B.S. Applied Mathematics &amp; Statistics, Stony Brook University (transfer student) — GPA 4.0/4.0.</span></li>
-      <li><span class="cv-year">2021–25</span><span>B.S. Applied Statistics, Anhui University.</span></li>
-      <li><span class="cv-year">2026–now</span><span>Graduate Researcher, Strategic Reasoning Group, University of Michigan — advised by Dr. Mithun Chakraborty.</span></li>
-      <li><span class="cv-year">2026</span><span>Machine Learning Engineer Intern, Shenzhen Linghang Technology — LLM customer-service assistant, data-ingestion pipelines.</span></li>
-      <li><span class="cv-year">2023–25</span><span>Undergraduate Researcher, Anhui University — Time Series Analytics Lab (Prof. Jiaming Zhu) and Decision Intelligence &amp; Data Analytics Group (Prof. Feifei Jin).</span></li>
+      <li>
+        <span class="cv-year">2025–27</span>
+        <span>M.S. Data Science, University of Michigan, Ann Arbor.</span>
+      </li>
+      <li>
+        <span class="cv-year">2021–25</span>
+        <div>
+          Dual B.S. degrees, Anhui University – Stony Brook University joint program.
+          <ul class="cv-sub">
+            <li><span class="cv-year">2024–25</span><span>Stony Brook University: B.S. Applied Mathematics &amp; Statistics, GPA 4.0/4.0.</span></li>
+            <li><span class="cv-year">2021–24</span><span>Anhui University: B.S. Applied Statistics.</span></li>
+          </ul>
+        </div>
+      </li>
     </ul>
-    <h3 class="sub-title">Honors &amp; awards</h3>
+    <p class="cv-note">In this joint program, students spend their first three years at Anhui University and their fourth year at Stony Brook as regular Stony Brook students, earning bachelor’s degrees from both. My research at Anhui began on campus in 2023, and I continued both projects remotely during my year at Stony Brook.</p>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <span class="eyebrow">Experience</span>
+    <h2 class="sec-title">Research and industry positions</h2>
+    <ul class="cv-highlights">
+      <li><span class="cv-year">2026–now</span><span>Graduate Researcher, Strategic Reasoning Group, University of Michigan — advised by Dr. Mithun Chakraborty.</span></li>
+      <li><span class="cv-year">2026</span><span>Machine Learning Engineer Intern (Apr–Aug), Shenzhen Linghang Technology — LLM customer-service assistant, data-ingestion pipelines.</span></li>
+      <li><span class="cv-year">2023–25</span><span>Undergraduate Researcher, Time Series Analytics Lab, Anhui University — advised by Prof. Jiaming Zhu.</span></li>
+      <li><span class="cv-year">2023–25</span><span>Undergraduate Researcher, Decision Intelligence &amp; Data Analytics Group, Anhui University — advised by Prof. Feifei Jin.</span></li>
+    </ul>
+    <p class="skills"><b>Toolkit:</b> Python, SQL, C++, Java, R, MATLAB · PyTorch, TensorFlow, Scikit-learn, Pandas, NumPy, SciPy, NetworkX · Git, Linux, Slurm (HPC), MySQL, LaTeX.</p>
+  </section>
+
+  <!-- HONORS -->
+  <section id="honors">
+    <span class="eyebrow">Honors</span>
+    <h2 class="sec-title">Honors &amp; awards</h2>
     <ul class="cv-highlights">
       <li><span class="cv-year">2025</span><span>Outstanding Graduate, Anhui University.</span></li>
       <li><span class="cv-year">2021–24</span><span>Anhui University Scholarship, awarded four consecutive years.</span></li>
       <li><span class="cv-year">2023</span><span>Provincial Award, China Undergraduate Mathematical Contest in Modeling (CUMCM).</span></li>
       <li><span class="cv-year">2023</span><span>Finalist, Anhui Provincial Photography Competition.</span></li>
     </ul>
-    <p class="skills"><b>Toolkit:</b> Python, SQL, C++, Java, R, MATLAB · PyTorch, TensorFlow, Scikit-learn, Pandas, NumPy, SciPy, NetworkX · Git, Linux, Slurm (HPC), MySQL, LaTeX.</p>
     <p style="margin-top:1.6rem;">
       <!-- Keep Hanyang_Liu_CV.pdf in the same folder as this page -->
       <a class="btn" href="Hanyang_Liu_CV.pdf" target="_blank" rel="noopener">
