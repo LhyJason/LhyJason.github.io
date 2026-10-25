@@ -367,11 +367,18 @@
     <h2 class="sec-title">Other things I've built</h2>
     <div class="projects">
       <div class="card">
-        <h3>Proactive User-Profile Inference</h3>
+        <h3>Elicitor: Clarifying Questions by Expected Information Gain</h3>
         <div class="yr">2026</div>
-        <div class="tags"><span class="tag">LLM</span><span class="tag">vLLM</span><span class="tag">dialogue</span></div>
-        <p>A proactive dialogue agent that asks follow-ups via threshold rules and updates a structured user profile with an LLM reflection module. Reproduced the evaluation (GPT-oss-120B): profile-recovery accuracy 0.92 vs. 0.38 for a passive baseline.</p>
-        <a class="card-link" href="https://github.com/LhyJason" target="_blank" rel="noopener">View on GitHub →</a>
+        <div class="tags"><span class="tag">LLM agents</span><span class="tag">Bayesian inference</span><span class="tag">preference elicitation</span></div>
+        <p>An LLM agent that keeps a Bayesian belief over a user's preferences and picks each clarifying question by expected information gain. In a pre-registered study of 8,160 dialogues on open models, a sampling-based EIG variant cut constraint violations from 1.24 to 0.34, and an LLM judge tracked true utility (Spearman 0.87) but flipped 28% of verdicts when the order was swapped. Builds on an EECS 545 team project on proactive user-profile inference.</p>
+        <a class="card-link" href="https://github.com/LhyJason/elicitor" target="_blank" rel="noopener">View on GitHub →</a>
+      </div>
+      <div class="card">
+        <h3>Serverless Market Data Pipeline on AWS</h3>
+        <div class="yr">2026</div>
+        <div class="tags"><span class="tag">AWS</span><span class="tag">Terraform</span><span class="tag">streaming</span></div>
+        <p>A serverless streaming pipeline (Kinesis, Lambda, DynamoDB, S3/Parquet, Athena) with a FastAPI query API, defined entirely in Terraform with a $0 LocalStack mirror. Load-tested on AWS: 0 of 98,550 ticks lost or double-counted at up to 800 ticks/s.</p>
+        <a class="card-link" href="https://github.com/LhyJason/aws-market-pipeline" target="_blank" rel="noopener">View on GitHub →</a>
       </div>
       <div class="card">
         <h3>Heliostat Field Optimization</h3>
